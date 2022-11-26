@@ -37,7 +37,139 @@
 .attribution {
   font-size: 11px;
   text-align: center;
+  margin-top: 4rem;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+body {
+  padding: 1rem;
+  position: relative;
+  font-family: "inter", sans-serif;
+}
+
+#top-container {
+  margin-bottom: 2rem;
+}
+
+#menu,
+#close-menu {
+  position: absolute;
+  top: 1.5rem;
+  right: 1rem;
+}
+
+#close-menu {
+  z-index: 1;
+  display: none;
+}
+
+#mobile-navbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: var(--off-white);
+  width: 70%;
+  height: 100vh;
+  display: none;
+}
+
+#links-container {
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 7rem 1.5rem;
+}
+
+#links-container a {
+  text-decoration: none;
+  color: var(--very-dark-blue);
+  font-family: "inter";
+  font-size: 1.1rem;
+}
+
+main h1 {
+  padding-top: 1rem;
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 0.9;
+  margin-bottom: 1rem;
+}
+
+main p {
+  color: var(--dark-grayish-blue);
+  line-height: 1.5;
+}
+
+#btn {
+  background-color: var(--soft-red);
+  color: var(--off-white);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  padding: 1rem 2rem;
+  margin: 1.5rem 0;
+  border: none;
+}
+
+aside {
+  background-color: var(--very-dark-blue);
+  padding: 1.5rem 1rem 0;
+  margin: 2rem 0;
+}
+
+aside h2 {
+  color: var(--soft-orange);
+  padding-bottom: 2rem;
+  font-size: 2rem;
+}
+
+aside h3 {
+  color: var(--off-white);
+}
+
+aside p {
+  color: var(--grayish-blue);
+  padding: 1rem 0 2rem;
+}
+
+aside hr {
+  border: solid 0.5px var(--grayish-blue);
+  opacity: 30%;
+  margin-bottom: 2rem;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+}
+
+.top-latest {
+  padding: 1rem 0.5rem;
+}
+
+.top-latest img {
+  height: 150px;
+  float: left;
+  padding-right: 1rem;
+}
+
+.top-latest h2 {
+  color: var(--grayish-blue);
+  font-size: 2rem;
+}
+
+.latest-title {
+  color: var(--very-dark-blue);
+  font-size: 1rem;
+  font-weight: 800;
+  padding: 1rem 0;
+}
+
+.latest-description {
+  color: var(--dark-grayish-blue);
+  font-size: 0.9rem;
+  line-height: 2;
 }
