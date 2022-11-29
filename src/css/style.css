@@ -48,6 +48,10 @@ body {
   font-family: "inter", sans-serif;
 }
 
+.active {
+  display: block;
+}
+
 #top-container {
   margin-bottom: 2rem;
 }
@@ -74,7 +78,7 @@ body {
   display: none;
 }
 
-#links-container {
+.links-container {
   height: 80%;
   display: flex;
   flex-direction: column;
@@ -82,11 +86,17 @@ body {
   padding: 7rem 1.5rem;
 }
 
-#links-container a {
+.links-container a {
   text-decoration: none;
   color: var(--very-dark-blue);
   font-family: "inter";
   font-size: 1.1rem;
+}
+
+.links-container a:hover,
+.latest-title:hover {
+  color: var(--soft-red);
+  cursor: pointer;
 }
 
 main h1 {
@@ -113,6 +123,10 @@ main p {
   border: none;
 }
 
+#btn:hover {
+  background-color: var(--very-dark-blue);
+}
+
 aside {
   background-color: var(--very-dark-blue);
   padding: 1.5rem 1rem 0;
@@ -127,6 +141,11 @@ aside h2 {
 
 aside h3 {
   color: var(--off-white);
+}
+
+aside h3:hover {
+  color: var(--soft-orange);
+  cursor: pointer;
 }
 
 aside p {
@@ -180,6 +199,26 @@ section {
 
   #logo {
     height: 40px;
+  }
+
+  #mobile-navbar,
+  #menu {
+    display: none;
+  }
+
+  .links-container {
+    height: auto;
+    flex-direction: row;
+    position: absolute;
+    right: 0;
+    top: 2rem;
+    padding: 0;
+  }
+
+  .links-container a {
+    text-decoration: none;
+    color: var(--dark-grayish-blue);
+    padding-left: 2.5rem;
   }
 
   main h1 {
