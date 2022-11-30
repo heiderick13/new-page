@@ -79,7 +79,7 @@ body {
 
 #mobile-navbar.active {
   left: 30%;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 400px rgba(0, 0, 0, 0.9);
 }
 
 .links-container {
